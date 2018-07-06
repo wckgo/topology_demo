@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "allowJs": true,
+    "module": "commonjs",
+    "removeComments": true,
+    "target": "es2017"
+  }
+}

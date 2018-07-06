@@ -1,0 +1,437 @@
+{
+    "keys": ["PROCESS_GROUP_INSTANCE-35145FDDFB469681", "PROCESS_GROUP_INSTANCE-A73EFCC54CF95DB4", "PROCESS_GROUP_INSTANCE-71EC2790A711DC16", "PROCESS_GROUP_INSTANCE-904BF8B6B3E38B80", "PROCESS_GROUP_INSTANCE-163ED5618E5A2E0B", "PROCESS_GROUP_INSTANCE-1778273FF4AE96E2", "PROCESS_GROUP_INSTANCE-2091E3800C0AC907", "PROCESS_GROUP_INSTANCE-0D02642B29ABA812", "PROCESS_GROUP_INSTANCE-3C346D6622ED8E3C", "PROCESS_GROUP_INSTANCE-A2CF8CDE166F132D", "PROCESS_GROUP_INSTANCE-AF1595E49A3EE08F", "PROCESS_GROUP_INSTANCE-BE48EE51BE1BF118", "PROCESS_GROUP_INSTANCE-F225979F0BF91504", "PROCESS_GROUP_INSTANCE-636CE5729C599636", "PROCESS_GROUP_INSTANCE-FB795FA7041EB37C", "PROCESS_GROUP_INSTANCE-76EF38DD11F98B16", "PROCESS_GROUP_INSTANCE-0DC83C65506649A5", "PROCESS_GROUP_INSTANCE-65BB238F1FFAF56D", "PROCESS_GROUP_INSTANCE-FCF06885BDE87A0B", "PROCESS_GROUP_INSTANCE-C56B19AAA2D2DC7B"],
+    "entities": [{
+        "id": 0,
+        "name": "CodeHelper.exe",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": true,
+        "connected": false,
+        "position": {
+            "x": 349,
+            "y": 49
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "DotNet"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 1,
+        "name": "local.js (shadowsocks-heroku)",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": false,
+        "connected": true,
+        "position": {
+            "x": 549,
+            "y": 519
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "NodeJS"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 2,
+        "name": "QQ音乐辅助进程",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": false,
+        "connected": false,
+        "position": {
+            "x": 579,
+            "y": 0
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "TechnologyIcon"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 3,
+        "name": "NVIDIA Driver Helper Service, Version 342.01",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": true,
+        "connected": false,
+        "position": {
+            "x": 39,
+            "y": 379
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "TechnologyIcon"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 4,
+        "name": "NGenTask.exe",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": false,
+        "connected": false,
+        "position": {
+            "x": 49,
+            "y": 839
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "DotNet"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 5,
+        "name": "bin/webpack-dev-server.js (webpack-dev-server)",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": true,
+        "connected": true,
+        "position": {
+            "x": 719,
+            "y": 349
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "NodeJS"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 6,
+        "name": "vmware-hostd.exe",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": true,
+        "connected": false,
+        "position": {
+            "x": 0,
+            "y": 609
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "TechnologyIcon"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 7,
+        "name": "网易有道词典",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": true,
+        "connected": false,
+        "position": {
+            "x": 169,
+            "y": 179
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "TechnologyIcon"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 8,
+        "name": "NVIDIA Update Backend",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": false,
+        "connected": false,
+        "position": {
+            "x": 809,
+            "y": 9
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "TechnologyIcon"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 9,
+        "name": "Google Chrome",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": true,
+        "connected": true,
+        "position": {
+            "x": 669,
+            "y": 479
+        },
+        "outgoingConnections": [{
+            "active": false,
+            "endEntity": 1
+        }, {
+            "active": true,
+            "endEntity": 5
+        }],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "TechnologyIcon"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 10,
+        "name": "Windows System",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": true,
+        "connected": false,
+        "position": {
+            "x": 179,
+            "y": 1029
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "Windows"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 11,
+        "name": "bin/npm-cli.js (npm)",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": false,
+        "connected": false,
+        "position": {
+            "x": 359,
+            "y": 1169
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "NodeJS"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 12,
+        "name": "NGenTask.exe",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": false,
+        "connected": false,
+        "position": {
+            "x": 1019,
+            "y": 109
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "DotNet"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 13,
+        "name": "TIM",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": true,
+        "connected": false,
+        "position": {
+            "x": 1189,
+            "y": 279
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "TechnologyIcon"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 14,
+        "name": "VMware Authorization Service",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": true,
+        "connected": false,
+        "position": {
+            "x": 1029,
+            "y": 1109
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "TechnologyIcon"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 15,
+        "name": "bin/yarn.js (yarn)",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": true,
+        "connected": false,
+        "position": {
+            "x": 809,
+            "y": 1209
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "NodeJS"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 16,
+        "name": "Visual Studio Code",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": true,
+        "connected": false,
+        "position": {
+            "x": 1269,
+            "y": 489
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "TechnologyIcon"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 17,
+        "name": "bin/tsc (typescript)",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": false,
+        "connected": false,
+        "position": {
+            "x": 1179,
+            "y": 939
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "NodeJS"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 18,
+        "name": "NVIDIA Settings",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": true,
+        "connected": false,
+        "position": {
+            "x": 579,
+            "y": 1239
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "TechnologyIcon"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }, {
+        "id": 19,
+        "name": "QQ音乐，听我想听的歌",
+        "type": "PROCESS_GROUP_INSTANCE",
+        "affected": false,
+        "active": false,
+        "connected": false,
+        "position": {
+            "x": 1269,
+            "y": 719
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "TechnologyIcon"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }],
+    "updateTime": "1530781776892",
+    "boundingBox": {
+        "x": 0,
+        "y": 0,
+        "width": 1309,
+        "height": 1279
+    }
+}

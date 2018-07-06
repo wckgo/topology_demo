@@ -1,0 +1,55 @@
+{
+    "keys": ["HOST-D1790F2EC59434E9"],
+    "entities": [{
+        "id": 0,
+        "name": "WeiChuanKai",
+        "type": "HOST",
+        "affected": false,
+        "active": true,
+        "connected": false,
+        "position": {
+            "x": 0,
+            "y": 0
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "Windows"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    },
+    {
+        "id": 1,
+        "name": "WeiChuanKai",
+        "type": "HOST",
+        "affected": false,
+        "active": true,
+        "connected": false,
+        "position": {
+            "x": 0,
+            "y": 0
+        },
+        "outgoingConnections": [],
+        "groupedEntities": [],
+        "otherProperties": {},
+        "insufficientPermissions": false,
+        "notPartOfManagementZone": false,
+        "icon": {
+            "primaryType": "Windows"
+        },
+        "hypervisor": false,
+        "monitoringCandidate": false
+    }
+],
+    "updateTime": "1530790204427",
+    "boundingBox": {
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+    }
+}
