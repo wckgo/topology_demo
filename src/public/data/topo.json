@@ -1,294 +1,395 @@
-{
-    "data": [
-        [{
-            "id": 0,
-            "name": "Website",
-            "type": "",
-            "active": true,
-            "connected": true,
-            "totalCount": 1,
-            "layerIndex": 0,
-            "childNodes": [{
-                "id": "APPLICATION-EA7C4B59F27D43EB",
-                "name": "My web application",
-                "type": "Website",
-                "active": true,
-                "connected": true,
-                "target": ["SERVICE-386C88AFE7BA6FF5"],
-                "source": []
-            }]
-        }],
-        [{
+[{
+    "key": {
+        "id": 0,
+        "name": "A",
+        "type": "group",
+        "totalCount": 4
+    },
+    "value": [{
+        "key": {
             "id": 1,
-            "name": "WebRequest",
-            "active": true,
-            "type": "",
-            "connected": true,
-            "totalCount": 1,
-            "layerIndex": 1,
-            "childNodes": [{
-                "id": "SERVICE-386C88AFE7BA6FF5",
-                "name": "webpack-dev-server",
-                "type": "WebRequest",
-                "active": true,
-                "connected": true,
-                "target": ["PROCESS_GROUP_INSTANCE-1778273FF4AE96E2"],
-                "source": ["APPLICATION-EA7C4B59F27D43EB"]
-            }]
-        }],
-        [{
+            "name": "欧洲",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
             "id": 2,
-            "name": "NodeJS",
-            "active": true,
-            "type": "",
-            "connected": true,
-            "totalCount": 5,
-            "layerIndex": 2,
-            "childNodes": [{
-                "id": "PROCESS_GROUP_INSTANCE-A73EFCC54CF95DB4",
-                "name": "local.js (shadowsocks-heroku)",
-                "type": "NodeJS",
-                "active": false,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-1778273FF4AE96E2",
-                "name": "bin/webpack-dev-server.js (webpack-dev-server)",
-                "type": "NodeJS",
-                "active": true,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"],
-                "source": ["SERVICE-386C88AFE7BA6FF5"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-044DB46BAC9AE0AC",
-                "name": "check.js (update-notifier)",
-                "type": "NodeJS",
-                "active": false,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-BE48EE51BE1BF118",
-                "name": "bin/npm-cli.js (npm)",
-                "type": "NodeJS",
-                "active": false,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-76EF38DD11F98B16",
-                "name": "bin/yarn.js (yarn)",
-                "type": "NodeJS",
-                "active": true,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }]
-
-        }, {
-            "id": 3,
-            "name": "DotNet",
-            "active": true,
-            "type": "",
-            "connected": true,
-            "totalCount": 1,
-            "layerIndex": "PROCESSES",
-            "childNodes": [{
-                "id": "PROCESS_GROUP_INSTANCE-35145FDDFB469681",
-                "name": "CodeHelper.exe",
-                "type": "DotNet",
-                "active": true,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }]
-        }, {
-            "id": 4,
-            "name": "TechnologyIcon",
-            "active": true,
-            "type": "",
-            "connected": true,
-            "totalCount": 12,
-            "layerIndex": "PROCESSES",
-            "childNodes": [{
-                "id": "PROCESS_GROUP_INSTANCE-904BF8B6B3E38B80",
-                "name": "NVIDIA Driver Helper Service, Version 342.01",
-                "type": "TechnologyIcon",
-                "active": true,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-AC37521129AAE653",
-                "name": "Microsoft Windows 恶意软件删除工具",
-                "type": "TechnologyIcon",
-                "active": false,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-0D02642B29ABA812",
-                "name": "网易有道词典",
-                "type": "TechnologyIcon",
-                "active": true,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-2091E3800C0AC907",
-                "name": "vmware-hostd.exe",
-                "type": "TechnologyIcon",
-                "active": true,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-A2CF8CDE166F132D",
-                "name": "Google Chrome",
-                "type": "TechnologyIcon",
-                "active": true,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-3C346D6622ED8E3C",
-                "name": "NVIDIA Update Backend",
-                "type": "TechnologyIcon",
-                "active": true,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-636CE5729C599636",
-                "name": "TIM",
-                "type": "TechnologyIcon",
-                "active": true,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-D0804E4C4DF6B51C",
-                "name": "Windows Modules Installer Worker",
-                "type": "TechnologyIcon",
-                "active": false,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-2EA2A0884F03AC93",
-                "name": "Windows Modules Installer Worker",
-                "type": "TechnologyIcon",
-                "active": false,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-FB795FA7041EB37C",
-                "name": "VMware Authorization Service",
-                "type": "TechnologyIcon",
-                "active": true,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-0DC83C65506649A5",
-                "name": "Visual Studio Code",
-                "type": "TechnologyIcon",
-                "active": true,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }, {
-                "id": "PROCESS_GROUP_INSTANCE-FCF06885BDE87A0B",
-                "name": "NVIDIA Settings",
-                "type": "TechnologyIcon",
-                "active": false,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }]
-        }, {
-            "id": 5,
-            "name": "Windows",
-            "active": true,
-            "type": "",
-            "connected": true,
-            "totalCount": 1,
-            "layerIndex": "PROCESSES",
-            "childNodes": [{
-                "id": "PROCESS_GROUP_INSTANCE-AF1595E49A3EE08F",
-                "name": "Windows System",
-                "type": "Windows",
-                "active": true,
-                "connected": true,
-                "target": ["HOST-D1790F2EC59434E9"]
-            }]
-        }],
-        [{
-            "id": 6,
-            "name": "Windows",
-            "active": true,
-            "type": "",
-            "connected": true,
-            "totalCount": 1,
-            "layerIndex": "HOST",
-            "childNodes": [{
-                "id": "HOST-D1790F2EC59434E9",
-                "name": "WeiChuanKai",
-                "type": "Windows",
-                "active": true,
-                "connected": true,
-                "target": ["GEOLOC_SITE-DE98DC0C8EFBADD6"],
-                "source": [
-                    "PROCESS_GROUP_INSTANCE-A73EFCC54CF95DB4",
-                    "PROCESS_GROUP_INSTANCE-1778273FF4AE96E2",
-                    "PROCESS_GROUP_INSTANCE-044DB46BAC9AE0AC",
-                    "PROCESS_GROUP_INSTANCE-BE48EE51BE1BF118",
-                    "PROCESS_GROUP_INSTANCE-76EF38DD11F98B16",
-                    "PROCESS_GROUP_INSTANCE-35145FDDFB469681",
-                    "PROCESS_GROUP_INSTANCE-904BF8B6B3E38B80",
-                    "PROCESS_GROUP_INSTANCE-AC37521129AAE653",
-                    "PROCESS_GROUP_INSTANCE-0D02642B29ABA812",
-                    "PROCESS_GROUP_INSTANCE-2091E3800C0AC907",
-                    "PROCESS_GROUP_INSTANCE-A2CF8CDE166F132D",
-                    "PROCESS_GROUP_INSTANCE-3C346D6622ED8E3C",
-                    "PROCESS_GROUP_INSTANCE-636CE5729C599636",
-                    "PROCESS_GROUP_INSTANCE-D0804E4C4DF6B51C",
-                    "PROCESS_GROUP_INSTANCE-2EA2A0884F03AC93",
-                    "PROCESS_GROUP_INSTANCE-FB795FA7041EB37C",
-                    "PROCESS_GROUP_INSTANCE-0DC83C65506649A5",
-                    "PROCESS_GROUP_INSTANCE-FCF06885BDE87A0B",
-                    "PROCESS_GROUP_INSTANCE-AF1595E49A3EE08F"
-                ]
-            }]
-        }],
-        [{
-            "id": 7,
-            "name": "GeolocSite",
-            "active": true,
-            "type": "",
-            "connected": true,
-            "totalCount": 1,
-            "layerIndex": "DATACENTER",
-            "childNodes": [{
-                "id": "GEOLOC_SITE-DE98DC0C8EFBADD6",
-                "name": "Beijing;Beijing;China",
-                "type": "GeolocSite",
-                "active": true,
-                "connected": false,
-                "target": [],
-                "source": ["HOST-D1790F2EC59434E9"]
-            }]
+            "type": "Country",
+            "name": "俄罗斯"
         }]
-        
-    ],
-    "node2Group": {
-        "APPLICATION-EA7C4B59F27D43EB": 0,
-        "SERVICE-386C88AFE7BA6FF5": 1,
-        "PROCESS_GROUP_INSTANCE-A73EFCC54CF95DB4": 2,
-        "PROCESS_GROUP_INSTANCE-1778273FF4AE96E2": 2,
-        "PROCESS_GROUP_INSTANCE-044DB46BAC9AE0AC": 2,
-        "PROCESS_GROUP_INSTANCE-BE48EE51BE1BF118": 2,
-        "PROCESS_GROUP_INSTANCE-76EF38DD11F98B16": 2,
-        "PROCESS_GROUP_INSTANCE-35145FDDFB469681": 3,
-        "PROCESS_GROUP_INSTANCE-904BF8B6B3E38B80": 4,
-        "PROCESS_GROUP_INSTANCE-AC37521129AAE653": 4,
-        "PROCESS_GROUP_INSTANCE-0D02642B29ABA812": 4,
-        "PROCESS_GROUP_INSTANCE-2091E3800C0AC907": 4,
-        "PROCESS_GROUP_INSTANCE-A2CF8CDE166F132D": 4,
-        "PROCESS_GROUP_INSTANCE-3C346D6622ED8E3C": 4,
-        "PROCESS_GROUP_INSTANCE-636CE5729C599636": 4,
-        "PROCESS_GROUP_INSTANCE-D0804E4C4DF6B51C": 4,
-        "PROCESS_GROUP_INSTANCE-2EA2A0884F03AC93": 4,
-        "PROCESS_GROUP_INSTANCE-FB795FA7041EB37C": 4,
-        "PROCESS_GROUP_INSTANCE-0DC83C65506649A5": 4,
-        "PROCESS_GROUP_INSTANCE-FCF06885BDE87A0B": 4,
-        "PROCESS_GROUP_INSTANCE-AF1595E49A3EE08F": 5,
-        "GEOLOC_SITE-DE98DC0C8EFBADD6": 7,
-        "HOST-D1790F2EC59434E9": 6
-    }
-}
+    }, {
+        "key": {
+            "id": 3,
+            "name": "南美",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 4,
+            "type": "Country",
+            "name": "乌拉圭"
+        }]
+    }, {
+        "key": {
+            "id": 5,
+            "name": "亚洲",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 6,
+            "type": "Country",
+            "name": "沙特"
+        }]
+    }, {
+        "key": {
+            "id": 7,
+            "name": "非洲",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 8,
+            "type": "Country",
+            "name": "埃及"
+        }]
+    }]
+}, {
+    "key": {
+        "id": 9,
+        "name": "B",
+        "type": "group",
+        "totalCount": 4
+    },
+    "value": [{
+        "key": {
+            "id": 10,
+            "name": "欧洲",
+            "type": "continent",
+            "totalCount": 2
+        },
+        "value": [{
+            "id": 11,
+            "type": "Country",
+            "name": "葡萄牙"
+        }, {
+            "id": 12,
+            "type": "Country",
+            "name": "西班牙"
+        }]
+    }, {
+        "key": {
+            "id": 13,
+            "name": "亚洲",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 14,
+            "type": "Country",
+            "name": "伊朗"
+        }]
+    }, {
+        "key": {
+            "id": 15,
+            "name": "非洲",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 16,
+            "type": "Country",
+            "name": "摩洛哥"
+        }]
+    }]
+}, {
+    "key": {
+        "id": 17,
+        "name": "C",
+        "type": "group",
+        "totalCount": 4
+    },
+    "value": [{
+        "key": {
+            "id": 18,
+            "name": "欧洲",
+            "type": "continent",
+            "totalCount": 2
+        },
+        "value": [{
+            "id": 19,
+            "type": "Country",
+            "name": "法国"
+        }, {
+            "id": 20,
+            "type": "Country",
+            "name": "丹麦"
+        }]
+    }, {
+        "key": {
+            "id": 21,
+            "name": "南美",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 22,
+            "type": "Country",
+            "name": "秘鲁"
+        }]
+    }, {
+        "key": {
+            "id": 23,
+            "name": "亚洲",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 24,
+            "type": "Country",
+            "name": "澳大利亚"
+        }]
+    }]
+}, {
+    "key": {
+        "id": 25,
+        "name": "D",
+        "type": "group",
+        "totalCount": 4
+    },
+    "value": [{
+        "key": {
+            "id": 26,
+            "name": "欧洲",
+            "type": "continent",
+            "totalCount": 2
+        },
+        "value": [{
+            "id": 27,
+            "type": "Country",
+            "name": "冰岛"
+        }, {
+            "id": 28,
+            "type": "Country",
+            "name": "克罗地亚"
+        }]
+    }, {
+        "key": {
+            "id": 29,
+            "name": "南美",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 30,
+            "type": "Country",
+            "name": "阿根廷"
+        }]
+    }, {
+        "key": {
+            "id": 31,
+            "name": "非洲",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 32,
+            "type": "Country",
+            "name": "尼日利亚"
+        }]
+    }]
+}, {
+    "key": {
+        "id": 33,
+        "name": "E",
+        "type": "group",
+        "totalCount": 4
+    },
+    "value": [{
+        "key": {
+            "id": 34,
+            "name": "欧洲",
+            "type": "continent",
+            "totalCount": 2
+        },
+        "value": [{
+            "id": 35,
+            "type": "Country",
+            "name": "瑞士"
+        }, {
+            "id": 36,
+            "type": "Country",
+            "name": "塞尔维亚"
+        }]
+    }, {
+        "key": {
+            "id": 37,
+            "name": "南美",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 38,
+            "type": "Country",
+            "name": "巴西"
+        }]
+    }, {
+        "key": {
+            "id": 39,
+            "name": "中北美",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 40,
+            "type": "Country",
+            "name": "哥斯达黎加"
+        }]
+    }]
+}, {
+    "key": {
+        "id": 41,
+        "name": "F",
+        "type": "group",
+        "totalCount": 4
+    },
+    "value": [{
+        "key": {
+            "id": 42,
+            "name": "欧洲",
+            "type": "continent",
+            "totalCount": 2
+        },
+        "value": [{
+            "id": 43,
+            "type": "Country",
+            "name": "德国"
+        }, {
+            "id": 44,
+            "type": "Country",
+            "name": "瑞典"
+        }]
+    }, {
+        "key": {
+            "id": 45,
+            "name": "南美",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 46,
+            "type": "Country",
+            "name": "墨西哥"
+        }]
+    }, {
+        "key": {
+            "id": 47,
+            "name": "亚洲",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 48,
+            "type": "Country",
+            "name": "韩国"
+        }]
+    }]
+}, {
+    "key": {
+        "id": 49,
+        "name": "G",
+        "type": "group",
+        "totalCount": 4
+    },
+    "value": [{
+        "key": {
+            "id": 50,
+            "name": "欧洲",
+            "type": "continent",
+            "totalCount": 2
+        },
+        "value": [{
+            "id": 51,
+            "type": "Country",
+            "name": "比利时"
+        }, {
+            "id": 52,
+            "type": "Country",
+            "name": "英格兰"
+        }]
+    }, {
+        "key": {
+            "id": 53,
+            "name": "非洲",
+            "type": "continent",
+            "totalCount": 1
+        },
+        "value": [{
+            "id": 54,
+            "type": "Country",
+            "name": "突尼斯"
+        }]
+    }, {
+        "key": {
+            "id": 55,
+            "name": "中北美",
+            "type": "continent"
+        },
+        "value": [{
+            "id": 56,
+            "type": "Country",
+            "name": "巴拿马"
+        }]
+    }]
+}, {
+    "key": {
+        "id": 57,
+        "name": "H",
+        "type": "group"
+    },
+    "value": [{
+        "key": {
+            "id": 58,
+            "name": "欧洲",
+            "type": "continent"
+        },
+        "value": [{
+            "id": 59,
+            "type": "Country",
+            "name": "波兰"
+        }]
+    }, {
+        "key": {
+            "id": 60,
+            "name": "南美",
+            "type": "continent"
+        },
+        "value": [{
+            "id": 61,
+            "type": "Country",
+            "name": "哥伦比亚"
+        }]
+    }, {
+        "key": {
+            "id": 62,
+            "name": "亚洲",
+            "type": "continent"
+        },
+        "value": [{
+            "id": 63,
+            "type": "Country",
+            "name": "日本"
+        }]
+    }, {
+        "key": {
+            "id": 64,
+            "name": "非洲",
+            "type": "continent"
+        },
+        "value": [{
+            "id": 65,
+            "type": "Country",
+            "name": "塞内加尔"
+        }]
+    }]
+}]

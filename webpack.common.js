@@ -1,5 +1,6 @@
 const path = require('path');
 const copyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: ['babel-polyfill', './src/main.ts'],
   resolve: {
@@ -9,7 +10,26 @@ module.exports = {
     new copyWebpackPlugin([{
       from: __dirname + '/src/public', //打包的静态资源目录地址
       to: './public' //打包到dist下面的public
-    }])
+    }]),
+    new HtmlWebpackPlugin({
+      title: "topology_demo",
+      filename: "./index.html",
+      template: "src/index.html",
+      inject: "body",
+      favicon: "",
+      minify: {
+        caseSensitive: true,
+        collapseBooleanAttributes: true,
+        collapseWhitespace: true
+      },
+      hash: true,
+      cache: true,
+      showErrors: true,
+      chunks: "",
+      chunksSortMode: "auto",
+      excludeChunks: "",
+      xhtml: false
+    })
   ]
 
 };

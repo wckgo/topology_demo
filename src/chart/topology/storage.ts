@@ -1,19 +1,30 @@
-namespace storage {
-    export interface NodeEntity extends d3.SimulationNodeDatum {
-        id: string;
-        name: string;
-        type: string;
-        active: boolean;
-        connected: boolean;
-        source?: Array<any>;
-        target?: Array<any>;
-        totalCount?: number;
-        layerIndex?: number;
-        childNodes?: Array<NodeEntity>;
-        expand?: boolean;
-    }
-    export function isNodeEntity(object): object is NodeEntity {
-        return object && object.connected !== undefined;
-    }
+export interface NodeEntity {
+    id: string;
+    name: string;
+    type: string;
+    totalCount?: number;
+    colorIndex?: number;
+    extend?: boolean;
+    size?: number;
+    links?: LinkEntity[];
+
 }
-export default storage;
+
+export interface Node extends d3.HierarchyNode<NodeEntity>, d3.SimulationNodeDatum {
+    r?: number;
+    extend?: boolean;
+}
+
+export interface MetaData {
+    nodes: NodeEntity[];
+    links: Array<{ source, target }>;
+}
+
+export interface LinkEntity {
+    source: d3.HierarchyNode<NodeEntity>;
+    target: d3.HierarchyNode<NodeEntity>;
+}
+
+export interface ForceCluster extends d3.Force<d3.SimulationNodeDatum, null> {
+    strength(strength: number): this;
+}
