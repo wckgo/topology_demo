@@ -1,525 +1,294 @@
 {
-    "apps": [{
-        "idGroup": 0,
-        "nodes": [{
-            "id": "APPLICATION-EA7C4B59F27D43EB",
-            "type": "Website",
-            "layer": "APP",
-            "name": "My web application",
-            "icon": {
-                "primaryType": "Website"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "SERVICE-386C88AFE7BA6FF5",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
+    "data": [
+        [{
+            "id": 0,
+            "name": "Website",
+            "type": "",
             "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
+            "connected": true,
+            "totalCount": 1,
+            "layerIndex": 0,
+            "childNodes": [{
+                "id": "APPLICATION-EA7C4B59F27D43EB",
+                "name": "My web application",
+                "type": "Website",
+                "active": true,
+                "connected": true,
+                "target": ["SERVICE-386C88AFE7BA6FF5"],
+                "source": []
+            }]
         }],
-        "layer": "APP",
-        "type": "Website",
-        "icon": {
-            "primaryType": "Website"
-        },
-        "isMonitoringCandidate": false,
-        "affectedCount": 0,
-        "totalCount": 1,
-        "insufficientPermissions": false,
-        "notPartOfManagementZone": false,
-        "group": false
-    }],
-    "services": [{
-        "idGroup": 1,
-        "nodes": [{
-            "id": "SERVICE-386C88AFE7BA6FF5",
-            "type": "WebRequest",
-            "layer": "SERVICES",
-            "name": "webpack-dev-server",
-            "icon": {
-                "primaryType": "NodeJS"
-            },
-            "otherProperty": {
-                "SERVICE_SUB_TYPE": "WebRequest"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "PROCESS_GROUP_INSTANCE-1778273FF4AE96E2",
-                "isActive": false
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
+        [{
+            "id": 1,
+            "name": "WebRequest",
             "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
+            "type": "",
+            "connected": true,
+            "totalCount": 1,
+            "layerIndex": 1,
+            "childNodes": [{
+                "id": "SERVICE-386C88AFE7BA6FF5",
+                "name": "webpack-dev-server",
+                "type": "WebRequest",
+                "active": true,
+                "connected": true,
+                "target": ["PROCESS_GROUP_INSTANCE-1778273FF4AE96E2"],
+                "source": ["APPLICATION-EA7C4B59F27D43EB"]
+            }]
         }],
-        "layer": "SERVICES",
-        "type": "WebRequest",
-        "icon": {
-            "primaryType": "NodeJS"
-        },
-        "isMonitoringCandidate": false,
-        "affectedCount": 0,
-        "totalCount": 1,
-        "insufficientPermissions": false,
-        "notPartOfManagementZone": false,
-        "group": false
-    }],
-    "processes": [{
-        "idGroup": 2,
-        "nodes": [{
-            "id": "PROCESS_GROUP_INSTANCE-A73EFCC54CF95DB4",
-            "type": "NodeJS",
-            "layer": "PROCESSES",
-            "name": "local.js (shadowsocks-heroku)",
-            "icon": {
-                "primaryType": "NodeJS"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
+        [{
+            "id": 2,
+            "name": "NodeJS",
             "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
+            "type": "",
+            "connected": true,
+            "totalCount": 5,
+            "layerIndex": 2,
+            "childNodes": [{
+                "id": "PROCESS_GROUP_INSTANCE-A73EFCC54CF95DB4",
+                "name": "local.js (shadowsocks-heroku)",
+                "type": "NodeJS",
+                "active": false,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-1778273FF4AE96E2",
+                "name": "bin/webpack-dev-server.js (webpack-dev-server)",
+                "type": "NodeJS",
+                "active": true,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"],
+                "source": ["SERVICE-386C88AFE7BA6FF5"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-044DB46BAC9AE0AC",
+                "name": "check.js (update-notifier)",
+                "type": "NodeJS",
+                "active": false,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-BE48EE51BE1BF118",
+                "name": "bin/npm-cli.js (npm)",
+                "type": "NodeJS",
+                "active": false,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-76EF38DD11F98B16",
+                "name": "bin/yarn.js (yarn)",
+                "type": "NodeJS",
+                "active": true,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }]
+
         }, {
-            "id": "PROCESS_GROUP_INSTANCE-1778273FF4AE96E2",
-            "type": "NodeJS",
-            "layer": "PROCESSES",
-            "name": "bin/webpack-dev-server.js (webpack-dev-server)",
-            "icon": {
-                "primaryType": "NodeJS"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
+            "id": 3,
+            "name": "DotNet",
             "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
+            "type": "",
+            "connected": true,
+            "totalCount": 1,
+            "layerIndex": "PROCESSES",
+            "childNodes": [{
+                "id": "PROCESS_GROUP_INSTANCE-35145FDDFB469681",
+                "name": "CodeHelper.exe",
+                "type": "DotNet",
+                "active": true,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }]
         }, {
-            "id": "PROCESS_GROUP_INSTANCE-BE48EE51BE1BF118",
-            "type": "NodeJS",
-            "layer": "PROCESSES",
-            "name": "bin/npm-cli.js (npm)",
-            "icon": {
-                "primaryType": "NodeJS"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": false
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": false,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }, {
-            "id": "PROCESS_GROUP_INSTANCE-76EF38DD11F98B16",
-            "type": "NodeJS",
-            "layer": "PROCESSES",
-            "name": "bin/yarn.js (yarn)",
-            "icon": {
-                "primaryType": "NodeJS"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
+            "id": 4,
+            "name": "TechnologyIcon",
             "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
+            "type": "",
+            "connected": true,
+            "totalCount": 12,
+            "layerIndex": "PROCESSES",
+            "childNodes": [{
+                "id": "PROCESS_GROUP_INSTANCE-904BF8B6B3E38B80",
+                "name": "NVIDIA Driver Helper Service, Version 342.01",
+                "type": "TechnologyIcon",
+                "active": true,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-AC37521129AAE653",
+                "name": "Microsoft Windows 恶意软件删除工具",
+                "type": "TechnologyIcon",
+                "active": false,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-0D02642B29ABA812",
+                "name": "网易有道词典",
+                "type": "TechnologyIcon",
+                "active": true,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-2091E3800C0AC907",
+                "name": "vmware-hostd.exe",
+                "type": "TechnologyIcon",
+                "active": true,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-A2CF8CDE166F132D",
+                "name": "Google Chrome",
+                "type": "TechnologyIcon",
+                "active": true,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-3C346D6622ED8E3C",
+                "name": "NVIDIA Update Backend",
+                "type": "TechnologyIcon",
+                "active": true,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-636CE5729C599636",
+                "name": "TIM",
+                "type": "TechnologyIcon",
+                "active": true,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-D0804E4C4DF6B51C",
+                "name": "Windows Modules Installer Worker",
+                "type": "TechnologyIcon",
+                "active": false,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-2EA2A0884F03AC93",
+                "name": "Windows Modules Installer Worker",
+                "type": "TechnologyIcon",
+                "active": false,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-FB795FA7041EB37C",
+                "name": "VMware Authorization Service",
+                "type": "TechnologyIcon",
+                "active": true,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-0DC83C65506649A5",
+                "name": "Visual Studio Code",
+                "type": "TechnologyIcon",
+                "active": true,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }, {
+                "id": "PROCESS_GROUP_INSTANCE-FCF06885BDE87A0B",
+                "name": "NVIDIA Settings",
+                "type": "TechnologyIcon",
+                "active": false,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }]
         }, {
-            "id": "PROCESS_GROUP_INSTANCE-65BB238F1FFAF56D",
-            "type": "NodeJS",
-            "layer": "PROCESSES",
-            "name": "bin/tsc (typescript)",
-            "icon": {
-                "primaryType": "NodeJS"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": false
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": false,
-            "hypervisor": false,
-            "monitoringCandidate": false
+            "id": 5,
+            "name": "Windows",
+            "active": true,
+            "type": "",
+            "connected": true,
+            "totalCount": 1,
+            "layerIndex": "PROCESSES",
+            "childNodes": [{
+                "id": "PROCESS_GROUP_INSTANCE-AF1595E49A3EE08F",
+                "name": "Windows System",
+                "type": "Windows",
+                "active": true,
+                "connected": true,
+                "target": ["HOST-D1790F2EC59434E9"]
+            }]
         }],
-        "layer": "PROCESSES",
-        "type": "NodeJS",
-        "icon": {
-            "primaryType": "NodeJS"
-        },
-        "isMonitoringCandidate": false,
-        "affectedCount": 0,
-        "totalCount": 5,
-        "insufficientPermissions": false,
-        "notPartOfManagementZone": false,
-        "group": true
-    }, {
-        "idGroup": 3,
-        "nodes": [{
-            "id": "PROCESS_GROUP_INSTANCE-35145FDDFB469681",
-            "type": "DotNet",
-            "layer": "PROCESSES",
-            "name": "CodeHelper.exe",
-            "icon": {
-                "primaryType": "DotNet"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
+        [{
+            "id": 6,
+            "name": "Windows",
             "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
+            "type": "",
+            "connected": true,
+            "totalCount": 1,
+            "layerIndex": "HOST",
+            "childNodes": [{
+                "id": "HOST-D1790F2EC59434E9",
+                "name": "WeiChuanKai",
+                "type": "Windows",
+                "active": true,
+                "connected": true,
+                "target": ["GEOLOC_SITE-DE98DC0C8EFBADD6"],
+                "source": [
+                    "PROCESS_GROUP_INSTANCE-A73EFCC54CF95DB4",
+                    "PROCESS_GROUP_INSTANCE-1778273FF4AE96E2",
+                    "PROCESS_GROUP_INSTANCE-044DB46BAC9AE0AC",
+                    "PROCESS_GROUP_INSTANCE-BE48EE51BE1BF118",
+                    "PROCESS_GROUP_INSTANCE-76EF38DD11F98B16",
+                    "PROCESS_GROUP_INSTANCE-35145FDDFB469681",
+                    "PROCESS_GROUP_INSTANCE-904BF8B6B3E38B80",
+                    "PROCESS_GROUP_INSTANCE-AC37521129AAE653",
+                    "PROCESS_GROUP_INSTANCE-0D02642B29ABA812",
+                    "PROCESS_GROUP_INSTANCE-2091E3800C0AC907",
+                    "PROCESS_GROUP_INSTANCE-A2CF8CDE166F132D",
+                    "PROCESS_GROUP_INSTANCE-3C346D6622ED8E3C",
+                    "PROCESS_GROUP_INSTANCE-636CE5729C599636",
+                    "PROCESS_GROUP_INSTANCE-D0804E4C4DF6B51C",
+                    "PROCESS_GROUP_INSTANCE-2EA2A0884F03AC93",
+                    "PROCESS_GROUP_INSTANCE-FB795FA7041EB37C",
+                    "PROCESS_GROUP_INSTANCE-0DC83C65506649A5",
+                    "PROCESS_GROUP_INSTANCE-FCF06885BDE87A0B",
+                    "PROCESS_GROUP_INSTANCE-AF1595E49A3EE08F"
+                ]
+            }]
         }],
-        "layer": "PROCESSES",
-        "type": "DotNet",
-        "icon": {
-            "primaryType": "DotNet"
-        },
-        "isMonitoringCandidate": false,
-        "affectedCount": 0,
-        "totalCount": 1,
-        "insufficientPermissions": false,
-        "notPartOfManagementZone": false,
-        "group": false
-    }, {
-        "idGroup": 4,
-        "nodes": [{
-            "id": "PROCESS_GROUP_INSTANCE-71EC2790A711DC16",
-            "type": "TechnologyIcon",
-            "layer": "PROCESSES",
-            "name": "QQ音乐辅助进程",
-            "icon": {
-                "primaryType": "TechnologyIcon"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": false
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": false,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }, {
-            "id": "PROCESS_GROUP_INSTANCE-904BF8B6B3E38B80",
-            "type": "TechnologyIcon",
-            "layer": "PROCESSES",
-            "name": "NVIDIA Driver Helper Service, Version 342.01",
-            "icon": {
-                "primaryType": "TechnologyIcon"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
+        [{
+            "id": 7,
+            "name": "GeolocSite",
             "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }, {
-            "id": "PROCESS_GROUP_INSTANCE-2091E3800C0AC907",
-            "type": "TechnologyIcon",
-            "layer": "PROCESSES",
-            "name": "vmware-hostd.exe",
-            "icon": {
-                "primaryType": "TechnologyIcon"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }, {
-            "id": "PROCESS_GROUP_INSTANCE-0D02642B29ABA812",
-            "type": "TechnologyIcon",
-            "layer": "PROCESSES",
-            "name": "网易有道词典",
-            "icon": {
-                "primaryType": "TechnologyIcon"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }, {
-            "id": "PROCESS_GROUP_INSTANCE-3C346D6622ED8E3C",
-            "type": "TechnologyIcon",
-            "layer": "PROCESSES",
-            "name": "NVIDIA Update Backend",
-            "icon": {
-                "primaryType": "TechnologyIcon"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }, {
-            "id": "PROCESS_GROUP_INSTANCE-A2CF8CDE166F132D",
-            "type": "TechnologyIcon",
-            "layer": "PROCESSES",
-            "name": "Google Chrome",
-            "icon": {
-                "primaryType": "TechnologyIcon"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }, {
-            "id": "PROCESS_GROUP_INSTANCE-636CE5729C599636",
-            "type": "TechnologyIcon",
-            "layer": "PROCESSES",
-            "name": "TIM",
-            "icon": {
-                "primaryType": "TechnologyIcon"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }, {
-            "id": "PROCESS_GROUP_INSTANCE-FB795FA7041EB37C",
-            "type": "TechnologyIcon",
-            "layer": "PROCESSES",
-            "name": "VMware Authorization Service",
-            "icon": {
-                "primaryType": "TechnologyIcon"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }, {
-            "id": "PROCESS_GROUP_INSTANCE-0DC83C65506649A5",
-            "type": "TechnologyIcon",
-            "layer": "PROCESSES",
-            "name": "Visual Studio Code",
-            "icon": {
-                "primaryType": "TechnologyIcon"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }, {
-            "id": "PROCESS_GROUP_INSTANCE-C56B19AAA2D2DC7B",
-            "type": "TechnologyIcon",
-            "layer": "PROCESSES",
-            "name": "QQ音乐，听我想听的歌",
-            "icon": {
-                "primaryType": "TechnologyIcon"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": false
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": false,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }],
-        "layer": "PROCESSES",
-        "type": "TechnologyIcon",
-        "icon": {
-            "primaryType": "TechnologyIcon"
-        },
-        "isMonitoringCandidate": false,
-        "affectedCount": 0,
-        "totalCount": 10,
-        "insufficientPermissions": false,
-        "notPartOfManagementZone": false,
-        "group": true
-    }, {
-        "idGroup": 5,
-        "nodes": [{
-            "id": "PROCESS_GROUP_INSTANCE-AF1595E49A3EE08F",
-            "type": "Windows",
-            "layer": "PROCESSES",
-            "name": "Windows System",
-            "icon": {
-                "primaryType": "Windows"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "HOST-D1790F2EC59434E9",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }],
-        "layer": "PROCESSES",
-        "type": "Windows",
-        "icon": {
-            "primaryType": "Windows"
-        },
-        "isMonitoringCandidate": false,
-        "affectedCount": 0,
-        "totalCount": 1,
-        "insufficientPermissions": false,
-        "notPartOfManagementZone": false,
-        "group": false
-    }],
-    "dataCenters": [{
-        "idGroup": 7,
-        "nodes": [{
-            "id": "GEOLOC_SITE-DE98DC0C8EFBADD6",
-            "type": "GeolocSite",
-            "layer": "DATACENTER",
-            "name": "Beijing;Beijing;China",
-            "icon": {
-                "primaryType": "GeolocSite"
-            },
-            "outgoingConnections": [],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }],
-        "layer": "DATACENTER",
-        "type": "GeolocSite",
-        "icon": {
-            "primaryType": "GeolocSite"
-        },
-        "isMonitoringCandidate": false,
-        "affectedCount": 0,
-        "totalCount": 1,
-        "insufficientPermissions": false,
-        "notPartOfManagementZone": false,
-        "group": false
-    }],
-    "hosts": [{
-        "idGroup": 6,
-        "nodes": [{
-            "id": "HOST-D1790F2EC59434E9",
-            "type": "Windows",
-            "layer": "HOST",
-            "name": "WeiChuanKai",
-            "icon": {
-                "primaryType": "Windows"
-            },
-            "outgoingConnections": [{
-                "endIdNode": "GEOLOC_SITE-DE98DC0C8EFBADD6",
-                "isActive": true
-            }],
-            "affected": false,
-            "insufficientPermissions": false,
-            "notPartOfManagementZone": false,
-            "active": true,
-            "hypervisor": false,
-            "monitoringCandidate": false
-        }],
-        "layer": "HOST",
-        "type": "Windows",
-        "icon": {
-            "primaryType": "Windows"
-        },
-        "isMonitoringCandidate": false,
-        "affectedCount": 0,
-        "totalCount": 1,
-        "insufficientPermissions": false,
-        "notPartOfManagementZone": false,
-        "group": false
-    }],
-    "nodes2Groups": {
-        "PROCESS_GROUP_INSTANCE-A73EFCC54CF95DB4": 2,
-        "PROCESS_GROUP_INSTANCE-71EC2790A711DC16": 4,
+            "type": "",
+            "connected": true,
+            "totalCount": 1,
+            "layerIndex": "DATACENTER",
+            "childNodes": [{
+                "id": "GEOLOC_SITE-DE98DC0C8EFBADD6",
+                "name": "Beijing;Beijing;China",
+                "type": "GeolocSite",
+                "active": true,
+                "connected": false,
+                "target": [],
+                "source": ["HOST-D1790F2EC59434E9"]
+            }]
+        }]
+        
+    ],
+    "node2Group": {
+        "APPLICATION-EA7C4B59F27D43EB": 0,
         "SERVICE-386C88AFE7BA6FF5": 1,
-        "PROCESS_GROUP_INSTANCE-904BF8B6B3E38B80": 4,
-        "PROCESS_GROUP_INSTANCE-0DC83C65506649A5": 4,
-        "PROCESS_GROUP_INSTANCE-FB795FA7041EB37C": 4,
-        "PROCESS_GROUP_INSTANCE-C56B19AAA2D2DC7B": 4,
-        "GEOLOC_SITE-DE98DC0C8EFBADD6": 7,
+        "PROCESS_GROUP_INSTANCE-A73EFCC54CF95DB4": 2,
+        "PROCESS_GROUP_INSTANCE-1778273FF4AE96E2": 2,
+        "PROCESS_GROUP_INSTANCE-044DB46BAC9AE0AC": 2,
         "PROCESS_GROUP_INSTANCE-BE48EE51BE1BF118": 2,
         "PROCESS_GROUP_INSTANCE-76EF38DD11F98B16": 2,
-        "PROCESS_GROUP_INSTANCE-1778273FF4AE96E2": 2,
         "PROCESS_GROUP_INSTANCE-35145FDDFB469681": 3,
-        "HOST-D1790F2EC59434E9": 6,
-        "PROCESS_GROUP_INSTANCE-3C346D6622ED8E3C": 4,
-        "PROCESS_GROUP_INSTANCE-A2CF8CDE166F132D": 4,
-        "PROCESS_GROUP_INSTANCE-65BB238F1FFAF56D": 2,
+        "PROCESS_GROUP_INSTANCE-904BF8B6B3E38B80": 4,
+        "PROCESS_GROUP_INSTANCE-AC37521129AAE653": 4,
         "PROCESS_GROUP_INSTANCE-0D02642B29ABA812": 4,
-        "PROCESS_GROUP_INSTANCE-AF1595E49A3EE08F": 5,
         "PROCESS_GROUP_INSTANCE-2091E3800C0AC907": 4,
+        "PROCESS_GROUP_INSTANCE-A2CF8CDE166F132D": 4,
+        "PROCESS_GROUP_INSTANCE-3C346D6622ED8E3C": 4,
         "PROCESS_GROUP_INSTANCE-636CE5729C599636": 4,
-        "APPLICATION-EA7C4B59F27D43EB": 0
-    },
-    "state": "notEmpty",
-    "likeHost": []
+        "PROCESS_GROUP_INSTANCE-D0804E4C4DF6B51C": 4,
+        "PROCESS_GROUP_INSTANCE-2EA2A0884F03AC93": 4,
+        "PROCESS_GROUP_INSTANCE-FB795FA7041EB37C": 4,
+        "PROCESS_GROUP_INSTANCE-0DC83C65506649A5": 4,
+        "PROCESS_GROUP_INSTANCE-FCF06885BDE87A0B": 4,
+        "PROCESS_GROUP_INSTANCE-AF1595E49A3EE08F": 5,
+        "GEOLOC_SITE-DE98DC0C8EFBADD6": 7,
+        "HOST-D1790F2EC59434E9": 6
+    }
 }
-
-
-
